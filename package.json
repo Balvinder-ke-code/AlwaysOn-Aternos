@@ -10,6 +10,7 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
+    "puppeteer": "^22.0.0",
     "mineflayer": "^4.20.1",
     "node-fetch": "^3.3.2"
   }
