@@ -1,12 +1,17 @@
 {
   "name": "minecraft-bot",
   "version": "1.0.0",
-  "main": "index.js",
   "type": "module",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
-    "mineflayer": "^4.20.1"
+    "mineflayer": "^4.20.1",
+    "node-fetch": "^3.3.2"
   }
 }
+
