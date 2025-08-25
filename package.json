@@ -1,18 +1,19 @@
 {
-  "name": "minecraft-bot",
+  "name": "nodejs",
   "version": "1.0.0",
-  "type": "module",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": ">=20.0.0"
-  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "puppeteer": "^22.0.0",
-    "mineflayer": "^4.20.1",
+    "@types/node": "^22.13.11",
+    "express": "^5.1.0",
+    "mineflayer": "^4.31.0",
     "node-fetch": "^3.3.2"
-  }
+  },
+  "description": ""
 }
-
