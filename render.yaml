@@ -1,0 +1,13 @@
+- type: web
+  name: mineflayer-bot-web
+  env: node
+  plan: free
+  buildCommand: "npm ci"
+  startCommand: "npm start"
+  repo: https://github.com/Balvinder-ke-code/AlwaysOn-Aternos
+  branch: main
+  envVars:
+    - key: MINECRAFT_HOST
+    value: "example.com"
+    - key: MINECRAFT_USERNAME
+    value: "BotName"
