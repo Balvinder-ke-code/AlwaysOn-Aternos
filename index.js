@@ -19,6 +19,7 @@ app.listen(PORT || 10000, "0.0.0.0", () => {
 
 let bot; // our minecraft bot
 let rejoinTimeout;
+let disconnectTimer;  // NEW: for disconnect
 
 function startBot() {
   bot = createBot({
@@ -52,6 +53,7 @@ function startBot() {
 
   bot.on("end", (reason) => {
     console.log("Bot disconnected:", reason);
+    if (disconnectTimer) clearTimeout(disconnectTimer);
   });
 
   bot.on("error", (err) => {
