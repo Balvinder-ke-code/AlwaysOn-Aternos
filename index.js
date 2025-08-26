@@ -54,13 +54,27 @@ function startBot() {
   bot.on("end", (reason) => {
     console.log("Bot disconnected:", reason);
     if (disconnectTimer) clearTimeout(disconnectTimer);
+
+    // auto-retry after 30 seconds if server kicked/closed
+    if (!rejoinTimeout) {
+      rejoinTimeout = setTimeout(() => {
+        console.log("Retrying connection...");
+        startBot();
+      }, 30000);
+    }
   });
 
   bot.on("error", (err) => {
     console.error("Bot error:", err);
-  });
-}
 
+    // also retry on error
+    if (!rejoinTimeout) {
+      rejoinTimeout = setTimeout(() => {
+        console.log("Retrying after error...");
+        startBot();
+      }, 30000);
+    }
+  });
 // --- Random movement & looking ---
 function randomMoveLoop() {
   if (!bot || !bot.entity) return;
