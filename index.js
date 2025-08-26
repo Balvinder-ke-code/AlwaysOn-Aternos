@@ -26,7 +26,6 @@ function startBot() {
     host: MINECRAFT_HOST,
     port: MINECRAFT_PORT ? Number(MINECRAFT_PORT) : 25565,
     username: MINECRAFT_USERNAME,
-    password: MINECRAFT_PASSWORD || undefined,
     version: MC_VERSION || false,
   });
 
