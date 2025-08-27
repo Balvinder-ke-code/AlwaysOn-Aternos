@@ -9,7 +9,5 @@
   envVars:
     - key: MINECRAFT_HOST
     value: "haklakasmp.aternos.me"
-    - key: MINECRAFT_PORT
-    value: "53310"
     - key: MINECRAFT_USERNAME
     value: "HaklaTheBot"
