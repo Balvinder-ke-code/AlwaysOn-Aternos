@@ -8,6 +8,8 @@
   branch: main
   envVars:
     - key: MINECRAFT_HOST
-    value: "example.com"
+    value: "haklakasmp.aternos.me"
+    - key: MINECRAFT_PORT
+    value: "53310"
     - key: MINECRAFT_USERNAME
-    value: "BotName"
+    value: "HaklaTheBot"
