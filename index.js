@@ -25,7 +25,7 @@ function startBot() {
     console.log("Bot logged in:", bot.username);
 
     // start moving
-    randomMoveLoop();
+    randomActivityLoop();
 
     // schedule disconnect 8–9 minutes
     const delay = (8 * 60 + Math.floor(Math.random() * 60)) * 1000;
@@ -50,19 +50,35 @@ function startBot() {
   });
 }
 
-function randomMoveLoop() {
+function randomActivityLoop() {
   if (!bot || !bot.entity) return;
 
-  const yaw = Math.random() * Math.PI * 2;
-  const pitch = (Math.random() - 0.5) * 0.5;
-  bot.look(yaw, pitch, true);
+  // Pick a random action
+  const actions = ["forward", "back", "left", "right", "jump", "look", "sneak"];
+  const action = actions[Math.floor(Math.random() * actions.length)];
 
-  if (Math.random() < 0.5) {
-    bot.setControlState("forward", true);
-    setTimeout(() => bot.setControlState("forward", false), 1000 + Math.random() * 2000);
+  if (action === "look") {
+    const yaw = Math.random() * Math.PI * 2;
+    const pitch = (Math.random() - 0.5) * 0.5;
+    bot.look(yaw, pitch, true);
+    console.log("Bot looks around");
+  } else if (action === "jump") {
+    bot.setControlState("jump", true);
+    setTimeout(() => bot.setControlState("jump", false), 300 + Math.random() * 500);
+    console.log("Bot jumps");
+  } else if (action === "sneak") {
+    bot.setControlState("sneak", true);
+    setTimeout(() => bot.setControlState("sneak", false), 1000 + Math.random() * 2000);
+    console.log("Bot sneaks");
+  } else {
+    bot.setControlState(action, true);
+    setTimeout(() => bot.setControlState(action, false), 1000 + Math.random() * 2000);
+    console.log(`Bot moves ${action}`);
   }
 
-  setTimeout(randomMoveLoop, 2000 + Math.random() * 5000);
+  // Repeat after 2–6 seconds
+  setTimeout(randomActivityLoop, 2000 + Math.random() * 4000);
 }
+
 
 startBot();
