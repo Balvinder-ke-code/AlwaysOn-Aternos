@@ -32,7 +32,7 @@ Follow these steps to host the bot for free on [Render](https://render.com):
   ```
 * **Plan**: Free tier is enough.
 
----
+
 
 ### 3. Set Environment Variables
 
