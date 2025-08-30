@@ -20,7 +20,7 @@ Follow these steps to host the bot for free on [Render](https://render.com):
 ### 2. Configure Build & Start Commands
 - **Language**: Node.js  
 - **Branch**: `main`  
-- **Build Command**:  
+- **Build Command**:
   ```bash
   npm install
 ````
@@ -46,7 +46,7 @@ Add the following **environment variables** in the Render service settings:
 | `MINECRAFT_USERNAME` | `BotName`            | The bot’s username (choose any).                                        |
 | `PORT`               | `10000`              | Required for Render, keep as is.                                        |
 
----
+
 
 ## ▶️ First Run
 
