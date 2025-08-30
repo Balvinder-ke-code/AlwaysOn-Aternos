@@ -23,7 +23,7 @@ Follow these steps to host the bot for free on [Render](https://render.com):
 - **Build Command**:
   ```bash
   npm install
-````
+
 
 * **Start Command**:
 
@@ -46,22 +46,24 @@ Add the following **environment variables** in the Render service settings:
 | `MINECRAFT_USERNAME` | `BotName`            | The bot’s username (choose any).                                        |
 | `PORT`               | `10000`              | Required for Render, keep as is.                                        |
 
-
+---
 
 ## ▶️ First Run
 
-1. Start your **Aternos server**.
-2. Once the Render service is deployed, the bot will automatically join your server.
+1. Start your **Aternos server**.  
+2. Once the Render service is deployed, the bot will automatically join your server.  
 
-⚠️ **Important Note**:
-Aternos sometimes bans bots. If that happens:
+---
 
-* Go to your Aternos console → Unban the bot.
-* Restart the server → The bot will reconnect automatically.
+## ⚠️ Troubleshooting
 
+🔹 **Bot Banned on Aternos?**  
+Aternos sometimes bans bots. If that happens:  
+- Go to your Aternos console → **Unban the bot**.  
+- Restart your server → The bot will reconnect automatically.  
 
-## 🎉 Done!
+---
 
-Congratulations! 🎊
-You now have a Minecraft bot running on your server **24/7 with Render.com**.
+## 🎉 Success!
 
+✅ Congratulations! Your bot is now running **24/7** on your Minecraft server with **Render.com**
