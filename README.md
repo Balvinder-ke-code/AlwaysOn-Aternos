@@ -62,7 +62,6 @@ Aternos sometimes bans bots. If that happens:
 * Go to your Aternos console → Unban the bot.
 * Restart the server → The bot will reconnect automatically.
 
----
 
 ## 🎉 Done!
 
