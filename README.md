@@ -1,11 +1,9 @@
 
-````markdown
 # Minecraft Bot for Cracked Servers (Aternos Compatible)
 
 This project is a simple **Minecraft bot** built using [Mineflayer](https://github.com/PrismarineJS/mineflayer).  
 It is designed for **cracked Minecraft servers**, especially **Aternos**.
 
----
 
 ## 🚀 Deployment on Render.com
 
@@ -18,7 +16,6 @@ Follow these steps to host the bot for free on [Render](https://render.com):
 4. In **Public Git Repository**, paste the URL of this repository.
 5. Choose a name of your liking.
 
----
 
 ### 2. Configure Build & Start Commands
 - **Language**: Node.js  
