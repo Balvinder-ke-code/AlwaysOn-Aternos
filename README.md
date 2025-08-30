@@ -69,4 +69,3 @@ Aternos sometimes bans bots. If that happens:
 Congratulations! 🎊
 You now have a Minecraft bot running on your server **24/7 with Render.com**.
 
-```
